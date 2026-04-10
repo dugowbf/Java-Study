@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Scanne2 {
+// 제곱근 값 구하기
+public class Scanner2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("x 값을 입력하세요 >> ");
