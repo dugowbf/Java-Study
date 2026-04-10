@@ -1,0 +1,35 @@
+import java.util.Scanner;
+// 입력한 값의 10의 자리 수와 1의 자리 수 비교
+public class Scanner7 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("1 ~ 99 사이의 정수를 입력하세요 >> ");
+        int num = scanner.nextInt();
+
+        int a = num / 10; // 입력한 값의 10의 자리 숫자 빼오기
+        int b = num % 10; // 입력한 갑스이 1의 자리 숫자 빼오기
+        int cnt = 0; // 출력을 위한 임의의 변수
+
+        if (a == 3 || a == 6 || a == 9) // 10의 자리 숫자가 3, 6, 9면 cnt + 1
+            cnt++;
+        if (b == 3 || b == 6 || b == 9) // 1의 자리 숫자가 3, 6, 9면 cnt + 1
+            cnt++;
+
+        switch (cnt) // 입력한 숫자를 통해 증가한 cnt의 값을 토대로 출력할 말을 정함
+        {
+            case 0;
+                System.out.println("박수없음");
+                break;
+            case 1; // 입력한 값이 3, 6, 9 중 하나면 증가한 cnt가 1이기 때문에 이를 출력
+                System.out.println("박수없음");
+                break;
+            case 2; // 입력한 값이 3, 6, 9 중 하나면 증가한 cnt가 2이기 때문에 이를 출력
+                System.out.println("박수없음");
+                break;
+            default:
+                System.out.println("잘못 입력하였습니다.");
+                break;
+        }
+    }
+}
