@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Scanne2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("x 값을 입력하세요 >> ");
+        int x = in.nextInt(); // x의 값을 입력
+        double z = Math.pow(x, 2); // x 값의 제곱값을 저장
+        int y = (int) (z - (3 * x + 7)); // y식 구하기
+        System.out.printf("x = " + x + " y = " + y);
+    }
+}
