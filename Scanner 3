@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// x와 y의 값을 구하여 의문문 구하기
 public class Scanner3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

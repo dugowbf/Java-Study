@@ -1,0 +1,21 @@
+import java.util.Scanner;
+// switch 연산자
+public class Scanner4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("논리 연산을 입력하세요 >> ");
+        String str = scanner.next();
+        switch(str) // 입력한 값을 비교
+        {
+            case "OR":
+                System.out.println("true"); // 입력한 연산자가 OR이면 true
+                break;
+            case "AND":
+                System.out.println("false"); // 입력한 연산자가 AND면 false
+                break;
+            default :
+                System.out.println("잘못 입력하였습니다.");
+                break;
+        }
+    }
+}
