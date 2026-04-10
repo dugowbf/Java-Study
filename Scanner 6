@@ -1,0 +1,32 @@
+import java.util.Scanner;
+// switch문을 사용하여 비교
+public class Scanner6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in)
+        System.out.println("커피 주문하세요 >> ");
+        String str = scanner.next();
+
+        switch (str)
+        {
+            case ("에소프레소") : // 입력한 값을 비교
+                int a = scanner.nextInt(); // 가격을 출력하기 위해 한 번 더 입력을 받음.
+                System.out.println((a * 2000) + "원입니다.");
+                break;
+            case ("에소프레소") : // 입력한 값을 비교
+                int a1 = scanner.nextInt(); // 가격을 출력하기 위해 한 번 더 입력을 받음.
+                System.out.println((a * 2500) + "원입니다.");
+                break;
+            case ("에소프레소") : // 입력한 값을 비교
+                int a2 = scanner.nextInt(); // 가격을 출력하기 위해 한 번 더 입력을 받음.
+                System.out.println((a * 3000) + "원입니다.");
+                break;
+            case ("에소프레소") : // 입력한 값을 비교
+                int a3 = scanner.nextInt(); // 가격을 출력하기 위해 한 번 더 입력을 받음.
+                System.out.println((a * 3500) + "원입니다.");
+                break;
+            default : // 다른 걸 입력하면 그만둠
+                System.out.println("잘못 입력하였습니다.");
+                break;
+        }
+    }
+}
