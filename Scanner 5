@@ -1,0 +1,33 @@
+import java.util.Scanner;
+// 입력한 값에 따라 한 번 더 입력하여 비교
+public class Scanner5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("커피 주문하세요 >> ");
+        String str = scanner.next();
+        if (str.equals("에소프레소")) // 입력 받은 값을 비교
+        {
+            int a = scanner.nextInt(); // 갯수 파악을 위해 scanner를 한 번 더 사용
+            System.out.println((a * 2000) + "원입니다.");
+        }
+        else if (str.equals("아메리카노"))
+        {
+            int a = scanner.nextInt(); // 갯수 파악을 위해 scanner를 한 번 더 사용
+            System.out.println((a * 2500) + "원입니다.");
+        }
+        else if (str.equals("카푸치노"))
+        {
+            int a = scanner.nextInt(); // 갯수 파악을 위해 scanner를 한 번 더 사용
+            System.out.println((a * 3000) + "원입니다.");
+        }
+        else if (str.equals("카페라떼"))
+        {
+            int a = scanner.nextInt(); // 갯수 파악을 위해 scanner를 한 번 더 사용
+            System.out.println((a * 3500) + "원입니다.");
+        }
+        else
+        {
+            System.out.println("잘못 입력하였습니다.") // 입력한 값이 보기에 없을 경우 출력
+        }
+    }
+}
